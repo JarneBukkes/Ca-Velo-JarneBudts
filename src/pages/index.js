@@ -1,57 +1,55 @@
 import React from 'react';
+import Link from 'next/link';
+
+const navStyle = {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: '1rem 2rem',
+  backgroundColor: '#e82127',
+  marginBottom: '1rem',
+  marginTop:'2rem',
+  color: 'white'
+ 
+}
 
 
-const styles = `
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-  }
 
-  .home-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  const footerStyle = {
+    backgroundColor: 'red',
+    color: 'white',
+    padding: '20px',
+    paddingLeft: '20px',
+    backgroundColor: '#e82127'
+  };
 
-  .home-button {
-    width: calc(50% - 20px);
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-    background-color: #e82127;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    height: 17rem;
-  }
 
-  .p {
-    color: black;
     
-  }
 
-  @media (max-width: 768px) {
-    .home-button {
-      width: calc(100% - 20px);
-    }
-  }
-`;
+
+
+const imgStyle ={
+  display: 'block',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  width: '100%',
+}
+  
+
+const linkStyle = {
+  marginRight: '1rem',
+  fontWeight: 'bold',
+  textDecoration: 'none'
+}
 
 const HomePage = () => {
   return (
   
-<div className="home-page">
-      <style>{styles}</style>
-      <button className="home-button">Home</button>
-      <button className="home-button">Stations</button>
-      <button className="home-button">Map</button>
-      <button className="home-button">Info </button>
-    </div>
+<img style={imgStyle}
+    src = "https://antwerp-web-prod.s3-eu-west-1.amazonaws.com/blocks/photo_2019-12-02_16-22-59.jpg"
+alt = "velo" 
+></img>
+
   );
 };
 

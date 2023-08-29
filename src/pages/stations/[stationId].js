@@ -26,7 +26,8 @@ export default function Home() {
   return (
     <div>
       <h1 style = {textStyle}>{station.name}</h1>
-      <p style = {textStyle2}> hier zijn nog {station.free_bikes} fietsen vrij!</p>
+      <p style = {textStyle2}> hier zijn nog {station.empty_slots} fietsen beschikbaar!</p>
+      <p style = {textStyle2}> Er zijn ook nog {station.free_bikes} plaatsjes vrij! </p> 
     </div>
   )
 }
